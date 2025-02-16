@@ -1,0 +1,172 @@
+/* UPest CSS */
+
+hr.solid {
+    border-top: 100% solid #812525;
+    border-color: #812525;
+    border-width: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 120%;
+    margin: 2%;
+    padding: 1%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+    overflow: hidden; /* Hide overflow to create the sliding effect */
+    position: relative;
+    border: none;
+    margin: 0 auto; /* Center the slider */
+    padding: 1%;
+  }
+  
+  /* Container for the slides */
+  .slides {
+    border: none;
+    display: flex;
+    width: 300%; /* Total width of all images (100% per image * 3 images) */
+    height: 100%; /* Match the height of the slider */
+    animation: slide 12s infinite; /* 12s total duration (4s per image * 3 images) */
+  }
+  
+  /* Individual slide (image) */
+  .slides img {
+    width: 100%; /* Each image takes up 100% of the slider's width */
+    border: none;
+    height: 100%; /* Each image takes up 100% of the slider's height */
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+  }
+  
+  /* Keyframes for the sliding animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0); /* Start at the first image */
+    }
+    33.33% {
+      transform: translateX(-33.33%); /* Move to the second image */
+    }
+    66.66% {
+      transform: translateX(-66.66%); /* Move to the third image */
+    }
+    100% {
+      transform: translateX(0); /* Loop back to the first image */
+    }
+  }
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #812525;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    text-align: center;
+}
+
+#para1 {
+    padding: 1%;
+    font-weight: lighter;
+    color: white;
+    background-color:#812525;
+}
+
+.head1 {
+    text-align: center;
+    padding: 1%;
+    }
+
+.head2 {
+    padding: 1%;
+    font-weight: lighter;
+    color: white;
+    background-color:#812525;
+    text-align: center;
+    text-shadow: 5px 5px #000000;
+    margin: 2%;
+}
+
+.head3 {
+text-align: center;
+padding: 1%;
+}
+
+main {
+    color:#ffffff;
+    text-shadow: 3px 3px #000000;
+    background-color:#812525;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 2%;
+    padding: 1%;
+    text-align: center;
+}
+
+
+
+img {
+    border: 5px solid #812525;
+display: block;
+width: 50vw;
+height: auto;
+margin: auto;
+}
+
+
+
+.navbar {
+    text-align: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+
+.navbar li a:hover {
+    color: #99252f;
+    background-color: #6e2222;
+}
+
+/* dropdown style */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #812525;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    margin: 0 2px;
+    padding: 0;
+}
+
+a:visited {
+    color: #939292;
+}
+
